@@ -18,13 +18,15 @@ export default function UpcomingEvent() {
 			{eventList.map((row, index) => (
 				<div className="event" key={index}>
 					<img src={row.backImg} alt="event-img" />
-					<div className="event-date">
-						<span>{row.day}</span>
-						<span>{row.date}</span>
-					</div>
 					<div className="event-detail">
-						<h3>{row.titleEvent}</h3>
-						<span>{row.desc}</span>
+						<div className="event-date">
+							<span>{row.day}</span>
+							<span>{row.date}</span>
+						</div>
+						<div className="event-desc">
+							<h3>{row.titleEvent}</h3>
+							<span>{row.desc}</span>
+						</div>
 					</div>
 				</div>
 			))}
