@@ -1,0 +1,178 @@
+.App {
+	position: relative;
+}
+
+.landing-section {
+	position: relative;
+	height: 100vh;
+}
+.landing-section video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+/* ------------------------------------------------------------------- */
+
+.reservation-section {
+	position: relative;
+	display: flex;
+	width: 100%;
+	color: var(--color-yellow);
+	background-color: var(--color-blue);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.slogan {
+	flex: 2;
+	padding: 150px 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.slogan h2 {
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin: 0;
+}
+.slogan h3 {
+	font-size: 2rem;
+	font-weight: 500;
+	margin: 0;
+	margin-top: 40px;
+	color: var(--color-red);
+}
+.slogan h4 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin: 20px 0;
+}
+.slogan p {
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 20px 0;
+	margin-bottom: auto;
+}
+.slogan button {
+	position: relative;
+	margin: 25px 30px;
+	padding: 10px 60px;
+	background: transparent;
+	border: 3px solid var(--color-yellow);
+	border-radius: 3px;
+	color: var(--color-yellow);
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	overflow: hidden;
+	transition: color 0.4s ease;
+}
+.reservation-section img {
+	object-fit: cover;
+	width: 100px;
+	height: 95vh;
+	flex: 1;
+}
+button:hover {
+	color: var(--color-blue);
+	z-index: 1;
+}
+
+/* ------------------------------------------------------------------- */
+
+.footer-section {
+	background-color: var(--color-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 250px;
+	gap: 35px;
+}
+.signup-box {
+	background-color: var(--color-yellow);
+	width: 250px;
+	padding: 35px;
+	border-radius: 5px;
+}
+.signup-box h3 {
+	font-size: 2rem;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.signup-box input {
+	width: 91%;
+	padding: 10px;
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+.signup-box p {
+	font-size: .8rem;
+	color: grey;
+}
+.signup-box button {
+	margin-top: 20px;
+	padding: 10px 30px;
+	width: 100%;
+	background-color: var(--color-blue);
+	border: 3px solid var(--color-blue);
+	color: var(--color-yellow);
+	font-size: 1.2rem;
+	transition: .4s ease;
+	cursor: pointer;
+}
+.signup-box button:hover {
+	background-color: transparent;
+	color: var(--color-blue);
+}
+
+.information {
+	padding: 20px;
+}
+.information p {
+	font-size: 1.2rem;
+	margin: 0;
+	color: var(--color-yellow);
+}
+.information .address {
+	margin-bottom: 35px;
+}
+.information .social-media {
+	margin-bottom: 35px;
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+}
+.information .social-media img {
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+}
+.information img {
+	object-fit: cover;
+	width: 250px;
+	height: 100px;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+.gallery img {
+	--img-size: 200px;
+	height: var(--img-size);
+	width: var(--img-size);
+	object-fit: cover;
+	transition: .4s ease;
+	cursor: pointer;
+}
+.gallery img:hover {
+	scale: 1.2;
+}
