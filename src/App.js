@@ -19,7 +19,7 @@ import event6 from './images/event6.jpg';
 import serving from './images/serving-bottle.webp';
 import table from './images/vip-lounge.png';
 
-import videoBg from './assets/Kalahari.mp4';
+import kalahariBackground from './images/kalahari-background.jpg';
 
 import './App.css';
 
@@ -29,8 +29,7 @@ function App() {
       <NavigationBar />
 
       <div className="landing-section">
-        <video src={videoBg} autoPlay loop muted disablePictureInPicture></video>
-        <div className="overlay"></div>
+        <img src={kalahariBackground} />
       </div>
 
       <div className="reservation-section">

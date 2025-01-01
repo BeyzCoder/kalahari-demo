@@ -1,13 +1,13 @@
 import '../styles/UpcomingEvent.css';
 
-import cozy from '../images/cozy-party.JPG';
+import pop from '../images/pop-dance.JPG';
 import dj from '../images/dj-buddy.JPG';
-import karaoke from '../images/karaoke2.JPG';
+import karaoke from '../images/karaoke1.JPG';
 
 export default function UpcomingEvent() {
 
 	const eventList = [
-		{ backImg: cozy, day: "FRI", date: "12/20", titleEvent: "COZY PARTY", desc: "DJ mike, Raybone, Saints"},
+		{ backImg: pop, day: "FRI", date: "12/20", titleEvent: "POP DANCE NIGHT", desc: "DJ Morel, J Sunday, Saints"},
 		{ backImg: karaoke, day: "WED", date: "12/25", titleEvent: "KARAOKE NIGHT", desc: "Sing your favorite song."},
 		{ backImg: dj, day: "SAT", date: "12/28", titleEvent: "BUDDY DUBSTEPS", desc: "DJ Skuta, Magic Mike, Aaron Jay"},
 	];

@@ -6,18 +6,28 @@
 	position: relative;
 	height: 100vh;
 }
-.landing-section video {
+.landing-section img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, .3);
+.landing-section h1 {
+	position: absolute;
+	color: var(--color-white);
+	font-size: 4.5rem;
+	font-weight: 600;
+}
+.landing-section h1:nth-of-type(1) {
+	top: 25%;
+	left: 10%;
+}
+.landing-section h1:nth-of-type(2) {
+	top: 52%;
+	left: 20%;
+}
+.landing-section h1:nth-of-type(3) {
+	bottom: 5%;
+	right: 10%;
 }
 
 /* ------------------------------------------------------------------- */
